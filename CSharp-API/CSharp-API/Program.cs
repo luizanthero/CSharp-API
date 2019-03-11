@@ -13,7 +13,17 @@ namespace CSharp_API
         {
             try
             {
-                Connection.Api("blood").Wait();
+                Console.Write("Enter an anime: ");
+                string name = Console.ReadLine();
+
+                if (name != "")
+                {
+                    Connection.Api(name).Wait();
+                }
+                else
+                {
+                    Console.WriteLine("No records found!");
+                }
             }
             catch (Exception e)
             {

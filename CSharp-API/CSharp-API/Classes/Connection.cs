@@ -46,6 +46,9 @@ namespace CSharp_API.Classes
                                     case "type":
                                         anime.type = obj.Value.ToString();
                                         break;
+                                    case "attributes":
+                                        anime.attributes = JsonConvert.DeserializeObject<Attributes>(obj.Value.ToString());
+                                        break;
                                     default:
                                         break;
                                 }

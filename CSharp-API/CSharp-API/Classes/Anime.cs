@@ -10,5 +10,6 @@ namespace CSharp_API.Classes
     {
         public string id { get; set; }
         public string type { get; set; }
+        public Attributes attributes { get; set; }
     }
 }

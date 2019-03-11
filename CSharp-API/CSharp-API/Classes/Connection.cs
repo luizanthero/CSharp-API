@@ -57,6 +57,14 @@ namespace CSharp_API.Classes
 
                         Console.WriteLine("ID: " + anime.id);
                         Console.WriteLine("Type: " + anime.type);
+                        Console.WriteLine("Poster: " + anime.attributes.posterImage.original);
+                        Console.WriteLine("Name: " + anime.attributes.canonicalTitle);
+                        Console.WriteLine("Start Date: " + anime.attributes.startDate.ToString("dd/MM/yyyy"));
+                        Console.WriteLine("End Date: " + anime.attributes.endDate.ToString("dd/MM/yyyy"));
+                        Console.WriteLine("Age Rating: " + anime.attributes.ageRatingGuide);
+                        Console.WriteLine("Episodes: " + anime.attributes.episodeCount);
+                        Console.WriteLine("Episodes Length: " + anime.attributes.episodeLength + " min.");
+                        Console.WriteLine("Youtube: youtube.com/watch?v=" + anime.attributes.youtubeVideoId);
                     }
                 }
             }

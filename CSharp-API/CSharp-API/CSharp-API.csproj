@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Anime.cs" />
+    <Compile Include="Classes\Attributes.cs" />
     <Compile Include="Classes\Connection.cs" />
     <Compile Include="Classes\Data.cs" />
     <Compile Include="Classes\Poster.cs" />

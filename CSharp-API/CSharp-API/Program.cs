@@ -13,16 +13,32 @@ namespace CSharp_API
         {
             try
             {
-                Console.Write("Enter an anime: ");
-                string name = Console.ReadLine();
-
-                if (name != "")
+                if (args.Length != 0)
                 {
-                    Connection.Api(name).Wait();
+                    string name = args[0];
+
+                    if (name != "" || name != " ")
+                    {
+                        Connection.Api(name).Wait();
+                    }
+                    else
+                    {
+                        Console.WriteLine("No records found!");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("No records found!");
+                    Console.Write("Enter an anime: ");
+                    string name = Console.ReadLine();
+
+                    if (name != "" || name != " ")
+                    {
+                        Connection.Api(name).Wait();
+                    }
+                    else
+                    {
+                        Console.WriteLine("No records found!");
+                    }
                 }
             }
             catch (Exception e)

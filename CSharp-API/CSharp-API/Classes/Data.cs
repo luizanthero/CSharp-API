@@ -8,6 +8,6 @@ namespace CSharp_API.Classes
 {
     class Data
     {
-        public Anime data { get; set; }
+        public List<Dictionary<string, object>> data { get; set; }
     }
 }
